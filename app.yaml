@@ -1,7 +1,7 @@
 application: Codemotionroma2014
 version: 1
 deploy: true
-pub: false
+pub: true
 dart2js: false
 framework: dart
 
