@@ -8,7 +8,9 @@
 import 'dart:io';
 
 main() {
-  HttpServer.bind(InternetAddress.LOOPBACK_IP_V4, 4040)
+//  HttpServer.bind(InternetAddress.LOOPBACK_IP_V4, 4040)
+  var port = int.parse(Platform.environment['PORT']);
+  HttpServer.bind('127.0.0.1', port)
   .then(listenForRequests);
 //      .then((HttpServer server) {
 //    print('listening on localhost, port ${server.port}');
